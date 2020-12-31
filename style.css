@@ -6,6 +6,10 @@
     color: rgba(0, 0, 0, 0.7);
 }
 
+html {
+    scroll-behavior: smooth;
+}
+
 section {
     position: relative;
     width: 100%;
@@ -17,7 +21,7 @@ section {
     background: #fff;
 }
 
-header {
+nav {
     position: absolute;
     top: 0;
     left: 0;
@@ -28,22 +32,22 @@ header {
     align-items: center;
 }
 
-header .logo {
+nav .logo {
     position: relative;
     font-size: 20px;
     letter-spacing: 10px;
 }
 
-header ul {
+nav ul {
     position: relative;
     display: flex;
 }
 
-header ul li {
+nav ul li {
     list-style: none;
 }
 
-header ul li a {
+nav ul li a {
     display: inline;
     color: #333;
     font-weight: 400;
@@ -52,6 +56,8 @@ header ul li a {
     text-decoration: none;
     letter-spacing: 5px;
 }
+
+/* Landing Page */
 
 /* Topic showcase frame */
 
@@ -178,7 +184,7 @@ header ul li a {
 /* Hover animation */
 
 .container .card:hover {
-    transform: translateY(20px);
+    transform: translateY(-20px);
 }
 
 .container .card::before {
@@ -226,3 +232,27 @@ header ul li a {
     right: 15px;
     text-align: center;
 }
+
+/* End of Landing Page */
+
+/* About Section */
+
+#about {
+    position: absolute;
+    text-align: center;
+    align-items: center;
+    padding: 200px;
+}
+
+#about h1 {
+    position: absolute;
+    top: 25%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    display: flex;
+    font-size: 40px;
+}
+
+/* Topics Section */
+
