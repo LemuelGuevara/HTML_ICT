@@ -4,15 +4,15 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="/css/main.css">
-    <link rel="stylesheet" href="/css/transitions.css">
     <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
     <title>Document</title>
 </head>
 <body>
 
     <!-- Landing page -->
-    
-    <section id=""> 
+
+    <section id="home"> 
+
         <!-- Nav Bar -->
 
         <nav>
@@ -20,9 +20,9 @@
                 <h1>ICT</h1>
             </div>
             <ul>
-                <li><a href="#">HOME</a></li>
-                <li><a href="#">ABOUT</a></li>
-                <li><a href="./topics.html">TOPICS</a></li>
+                <li><a href="index.html">HOME</a></li>
+                <li><a href="">ABOUT</a></li>
+                <li><a href="topics.html">TOPICS</a></li>
                 <li><a href="#">RESOURCES</a></li>
             </ul>
         </nav>
@@ -88,24 +88,5 @@
             </div>
         </div>
     </section>
-
-    <script type="text/javascript">
-        barba.init({
-          transitions: [{
-            name: 'opacity-transition',
-            leave(data) {
-              return gsap.to(data.current.container, {
-                opacity: 0
-              });
-            },
-            enter(data) {
-              return gsap.from(data.next.container, {
-                opacity: 0
-              });
-            }
-          }]
-        });
-      </script>
-
 </body>
 </html>

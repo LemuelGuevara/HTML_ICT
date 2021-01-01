@@ -1,0 +1,283 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+    color: rgba(0, 0, 0, 0.7);
+}
+
+
+html {
+    scroll-behavior: smooth;
+}
+
+/* Home Page */
+
+section {
+    position: relative;
+    width: 100%;
+    padding: 100px;
+    display: flex;
+    min-height: 100vh;
+    justify-content: space-between;
+    align-items: center;
+    background-image: url(/img/ICT\ Background\ .png);
+}
+
+nav {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 0px 100px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #F3F3F3;
+    opacity: 70%;
+}
+
+nav .logo {
+    position: relative;
+    font-size: 44px;
+    letter-spacing: 10px;
+    cursor: default;
+}
+
+nav ul {
+    position: relative;
+    display: flex;
+}
+
+nav ul li {
+    list-style: none;
+}
+
+nav ul li a {
+    display: inline;
+    color: #333;
+    font-weight: 400;
+    font-size: 20px;
+    margin-left: 35px;
+    text-decoration: none;
+    letter-spacing: 5px;
+}
+
+/* Landing Page */
+
+/* Topic showcase frame */
+
+.container {
+    position: relative;
+    width: 1578px;
+    height: 300px;
+    margin-top: 50px auto;
+    margin-bottom: 240px auto;
+}
+
+/* Topic cards */
+
+.container .card {
+    position: relative;
+    width: calc(192px - 10px);
+    height: calc(260px - 25px);
+    background: #F3F3F3;
+    float: left;
+    margin: 20px;
+    border-radius: 24px;
+    box-shadow: 15px 19px 27px 4px rgba(0, 0, 0, 0.25), 
+    inset -4px -4px 6px rgba(0, 0, 0, 0.25);
+    transition: 0.5s ease;
+    cursor: pointer;
+    animation: transitionIn 0.75s;
+}
+
+/* Information inside the topic boxes */
+
+.container .card .computer {
+    position: absolute;
+    width: 112px;
+    height: 22px;
+    margin: 35px;
+    text-align: center;
+    font-weight: 600;
+    font-size: 12px;
+    font-family: 'Poppins', sans-serif;
+    font-style: normal;
+    letter-spacing: 5px;
+    line-height: 22px;
+}
+
+.container .card .ict-technology {
+    position: absolute;
+    width: 160px;
+    height: 60px;
+    margin: 10px;
+    text-align: center;
+    font-weight: 600;
+    font-size: 12px;
+    font-family: 'Poppins', sans-serif;
+    font-style: normal;
+    letter-spacing: 5px;
+    line-height: 22px;
+}
+
+.container .card .computer-crime-and-security {
+    position: absolute;
+    width: 155px;
+    height: 60px;
+    margin: 15px;
+    text-align: center;
+    font-weight: 600;
+    font-size: 12px;
+    font-family: 'Poppins', sans-serif;
+    font-style: normal;
+    letter-spacing: 5px;
+    line-height: 22px;
+}
+
+.container .card .computer-ethics{
+    position: absolute;
+    width: 155px;
+    height: 60px;
+    margin: 15px;
+    text-align: center;
+    font-weight: 600;
+    font-size: 12px;
+    font-family: 'Poppins', sans-serif;
+    font-style: normal;
+    letter-spacing: 5px;
+    line-height: 22px;
+}
+
+.container .card .word-processor{
+    position: absolute;
+    width: 155px;
+    height: 60px;
+    margin: 15px;
+    text-align: center;
+    font-weight: 600;
+    font-size: 12px;
+    font-family: 'Poppins', sans-serif;
+    font-style: normal;
+    letter-spacing: 5px;
+    line-height: 22px;
+}
+
+.container .card .presentation-software{
+    position: absolute;
+    width: 155px;
+    height: 60px;
+    margin: 15px;
+    text-align: center;
+    font-weight: 600;
+    font-size: 12px;
+    font-family: 'Poppins', sans-serif;
+    font-style: normal;
+    letter-spacing: 5px;
+    line-height: 22px;
+}
+
+/* Topic icons */
+
+.container .card .icon {
+    position: relative;
+    margin-top: 30px;
+    left: 0;
+    right: 0;
+    height: 90px;
+    align-items: center;
+}
+
+/* Hover animation */
+
+.container .card:hover {
+    transform: scale(1.2);
+}
+
+.container .card::before {
+    content: "";
+    position: absolute;
+    display: block;
+    transition: 0.5s all;
+    z-index: 2;
+    opacity: 0;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border-radius: 24px;
+    box-shadow: 15px 19px 27px 4px rgba(0, 0, 0, 0.25), 
+    inset -4px -4px 6px rgba(0, 0, 0, 0.25);
+    background-color: #fffcf9;
+    background-color: #e2c9be;
+    background-image: linear-gradient(315deg, #e2c9be 0%, #fbf7e9 74%);    
+}
+.container .card:hover::before {
+    opacity: 1;
+}
+
+.container .card .info {
+    position: relative;
+    z-index: 2;
+    color: rgb(0, 0, 0);
+    opacity: 0;
+    transform: translateY(30px);
+    transition: 0.7s all;
+    align-items: center;
+    justify-content: center;
+}
+
+.container .card:hover .info {
+    opacity: 1;
+}
+
+.container .card .info p {
+    letter-spacing: 1px;
+    font-size: 10px;
+    margin-top: -160px;
+    margin-bottom: 30px;
+    left: 15px;
+    right: 15px;
+    text-align: center;
+}
+
+/* End of Landing Page */
+
+/* About Page */
+
+
+/* Topics Page */
+
+.topic-choice {
+    position: relative;
+    width: 355px;
+    height: 550px;
+    margin-top: 50px auto;
+    margin-bottom: 200px auto;
+    cursor: pointer;   
+}
+
+.topic-choice .button {
+    position: relative;
+    width: calc(355px - 60px);
+    height: calc(955px - 880px);
+    float: left;
+    margin: 7px;
+    border-radius: 35px;
+    box-shadow: 15px 19px 27px 4px rgba(0, 0, 0, 0.25), 
+    inset -4px -4px 6px rgba(0, 0, 0, 0.25);
+    background: white;
+    animation: transitionIn 0.75s;
+}
+
+.topic-choice .button p {
+    text-align: center;
+    margin: 18px;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+#computer-crime-security {
+    margin: 10px;
+}

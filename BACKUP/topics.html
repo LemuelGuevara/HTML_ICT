@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/css/main.css">
+    <link rel="stylesheet" href="/css/transitions.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
+    <title>Document</title>
+</head>
+<body>
+
+    <!-- Landing page -->
+
+    <div class="loader" id="loader"></div>
+    <section id="topics"> 
+        <!-- Nav Bar -->
+
+        <nav>
+            <div class="logo">
+                <h1>ICT</h1>
+            </div>
+            <ul>
+                <li><a href="./index.html">HOME</a></li>
+                <li><a href="#">ABOUT</a></li>
+                <li><a href="#">TOPICS</a></li>
+                <li><a href="#">RESOURCES</a></li>
+            </ul>
+        </nav>
+
+        <!-- End of nav bar -->
+
+        <!-- Topic Page -->
+        
+        <div class="topic-choice">
+            <div class="button">
+                <p>All</p>
+            </div>
+            <div class="button">
+                <p>Computer</p>
+            </div>
+            <div class="button">
+                <p>ICT Technology</p>
+            </div>
+            <div class="button">
+                <p id="computer-crime-security">Computer Crime and Security</p>
+            </div>
+            <div class="button">
+                <p>Computer Ethics</p>
+            </div>
+            <div class="button">
+                <p>Word Processor</p>
+            </div>
+            <div class="button">
+                <p>Presentation Software</p>
+            </div>
+        </div>
+
+        <!-- End of Topic Page -->
+
+    </section>
+
+    <script type="text/javascript">
+        barba.init({
+          transitions: [{
+            name: 'opacity-transition',
+            leave(data) {
+              return gsap.to(data.current.container, {
+                opacity: 0
+              });
+            },
+            enter(data) {
+              return gsap.from(data.next.container, {
+                opacity: 0
+              });
+            }
+          }]
+        });
+      </script>
+
+</body>
+</html>
