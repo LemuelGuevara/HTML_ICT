@@ -262,7 +262,7 @@ nav ul li a {
     height: 550px;
     margin-top: 50px auto;
     margin-bottom: 200px auto;
-    cursor: pointer;   
+    cursor: pointer;
 }
 
 .topic-choice-nav .button {
@@ -283,10 +283,13 @@ nav ul li a {
     margin: 18px;
     font-size: 20px;
     font-weight: bold;
+    text-decoration: none;
+    font-style: normal;
 }
 
 #computer-crime-security {
     margin: 10px;
+    text-decoration: none;
 }
 
 .topic-frame{
