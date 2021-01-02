@@ -299,11 +299,10 @@ nav ul li a {
     left: 450px;
     top: 110px;
     margin-top: 50px auto;
-    margin-bottom: 200px auto;
-    cursor: pointer;   
+    margin-bottom: 200px auto; 
 }
 
-.topic-frame .topic-container {
+.topic-container {
     position: relative;
     width: calc(355px - 45px);
     height: calc(955px - 775px);
@@ -311,8 +310,8 @@ nav ul li a {
     float: left; 
     margin: 10px;
     border-radius: 17px;
-    border: 1.5px solid #d4d4d4;
-    animation: 0.75s;
+    transition: 0.5s ease;
+    cursor: pointer;  
 }
 
 .topic-frame .topic-container p {
@@ -326,6 +325,13 @@ nav ul li a {
     font-weight: 660;
 }
 
-.topic-frame .topic-container::hover {
-    transform: scale(1.2);
+.topic-container:hover {
+    transform: scale(1.05);
+    box-shadow: 0px 2px 10px 2px rgba(0, 0, 0, 0.25);;
 }
+
+/* End of Topics Page */
+
+/* Resources Page */
+
+/* End of Resources Page */
