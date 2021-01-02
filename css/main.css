@@ -21,7 +21,7 @@ section {
     min-height: 100vh;
     justify-content: space-between;
     align-items: center;
-    background-image: url(/img/ICT\ Background\ .png);
+    background-image: url(../img/bg-ICT.png);
 }
 
 nav {
@@ -61,6 +61,13 @@ nav ul li a {
     margin-left: 35px;
     text-decoration: none;
     letter-spacing: 5px;
+}
+
+#bg-image {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
 }
 
 /* Landing Page */
@@ -281,3 +288,4 @@ nav ul li a {
 #computer-crime-security {
     margin: 10px;
 }
+
