@@ -256,7 +256,7 @@ nav ul li a {
 
 /* Topics Page */
 
-.topic-choice {
+.topic-choice-nav {
     position: relative;
     width: 355px;
     height: 550px;
@@ -265,7 +265,7 @@ nav ul li a {
     cursor: pointer;   
 }
 
-.topic-choice .button {
+.topic-choice-nav .button {
     position: relative;
     width: calc(355px - 60px);
     height: calc(955px - 880px);
@@ -278,7 +278,7 @@ nav ul li a {
     animation: transitionIn 0.75s;
 }
 
-.topic-choice .button p {
+.topic-choice-nav .button p {
     text-align: center;
     margin: 18px;
     font-size: 20px;
@@ -289,3 +289,40 @@ nav ul li a {
     margin: 10px;
 }
 
+.topic-frame{
+    position: absolute;
+    width: 1000px;
+    height: 610px;
+    left: 450px;
+    top: 110px;
+    margin-top: 50px auto;
+    margin-bottom: 200px auto;
+    cursor: pointer;   
+}
+
+.topic-frame .topic-container {
+    position: relative;
+    width: calc(355px - 45px);
+    height: calc(955px - 775px);
+    background: rgb(241, 241, 241);
+    float: left; 
+    margin: 10px;
+    border-radius: 17px;
+    border: 1.5px solid #d4d4d4;
+    animation: 0.75s;
+}
+
+.topic-frame .topic-container p {
+    position: absolute;
+    text-align: left;
+    left: 20px;
+    top: 140px;
+    font-size: 15px;
+    line-height: 27px;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 660;
+}
+
+.topic-frame .topic-container::hover {
+    transform: scale(1.2);
+}

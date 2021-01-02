@@ -1,4 +1,4 @@
-/* @keyframes transitionIn {
+@keyframes transitionIn {
     from {
         opacity: 0;
         transform: translateX(-20px);
@@ -8,8 +8,8 @@
         opacity: 1;
         transform: translateY(0);
     }
-} */
-
+}
+/* 
 .transition-1 .is-active {
     position: fixed;
     top: 0;
@@ -26,4 +26,4 @@
 .transition-1 .is-active {
     opacity: 1;
     pointer-events: all;
-}
+} */
