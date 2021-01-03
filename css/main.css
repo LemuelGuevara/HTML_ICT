@@ -263,6 +263,7 @@ nav ul li a {
     margin-top: 50px auto;
     margin-bottom: 200px auto;
     cursor: pointer;
+    text-decoration: none;
 }
 
 .topic-choice-nav .button {
@@ -283,8 +284,11 @@ nav ul li a {
     margin: 18px;
     font-size: 20px;
     font-weight: bold;
-    text-decoration: none;
     font-style: normal;
+}
+
+.topic-choice-nav .button a {
+    text-decoration: none;
 }
 
 #computer-crime-security {
@@ -302,7 +306,7 @@ nav ul li a {
     margin-bottom: 200px auto; 
 }
 
-.topic-container {
+.topic-frame .topic-container {
     position: relative;
     width: calc(355px - 45px);
     height: calc(955px - 775px);
@@ -333,5 +337,41 @@ nav ul li a {
 /* End of Topics Page */
 
 /* Resources Page */
+
+.resources-frame {
+    position: absolute;
+    width: 1000px;
+    height: 410px;
+    left: 270px;
+    top: 210px;
+    margin-top: 50px auto;
+    margin-bottom: 200px auto;
+    text-align: center;
+}
+
+.resources-frame .resources-container {
+    position: relative;
+    width: calc(355px - 45px);
+    height: calc(955px - 775px);
+    background: rgb(241, 241, 241);
+    float: left; 
+    margin: 10px;
+    border-radius: 17px;
+    transition: 0.5s ease;
+    cursor: pointer;
+    box-shadow: 15px 19px 27px 4px rgba(0, 0, 0, 0.25), 
+    inset -4px -4px 6px rgba(0, 0, 0, 0.25);
+}
+
+.resources-frame .resources-container p {
+    position: absolute;
+    text-align: left;
+    left: 20px;
+    top: 140px;
+    font-size: 24px;
+    line-height: 27px;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 660;
+}
 
 /* End of Resources Page */
