@@ -309,14 +309,34 @@ nav ul li a {
 
 /* End of Button Hover Animation */
 
+/* Topic Containers */
+
 .topic-frame{
     position: absolute;
-    width: 1000px;
-    height: 610px;
+    width: 1050px;
+    height: 605px;
     left: 450px;
     top: 110px;
     margin-top: 50px auto;
-    margin-bottom: 200px auto; 
+    margin-bottom: 200px auto;
+    scroll-behavior: smooth;
+    overflow: hidden;
+    overflow-y: scroll;
+    
+}
+
+::-webkit-scrollbar {
+    width: 25px;
+}
+
+::-webkit-scrollbar-track {
+    border: 5px solid rgb(235, 235, 235);
+    border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb {
+    background: linear-gradient(315deg, #e2c9be 0%, #fbf7e9 74%);
+    border-radius: 10px;
 }
 
 .topic-frame .topic-container {
@@ -372,19 +392,28 @@ nav ul li a {
     border-radius: 17px;
     transition: 0.5s ease;
     cursor: pointer;
-    box-shadow: 15px 19px 27px 4px rgba(0, 0, 0, 0.25), 
-    inset -4px -4px 6px rgba(0, 0, 0, 0.25);
+    box-shadow: 15px 19px 27px 4px rgba(0, 0, 0, 0.25);
+    /* inset -4px -4px 6px rgba(0, 0, 0, 0.25); */
 }
 
 .resources-frame .resources-container p {
     position: absolute;
     text-align: left;
     left: 20px;
-    top: 140px;
+    top: 150px;
     font-size: 24px;
     line-height: 27px;
     font-family: 'Poppins', sans-serif;
     font-weight: 660;
+}
+
+#bg-image {
+    position: relative;
+    width: 310px;
+    height: 145px;
+    border-top-right-radius: 17px;
+    border-top-left-radius: 17px;
+    border-bottom: 1px solid rgb(207, 207, 207) ;
 }
 
 /* End of Resources Page */
