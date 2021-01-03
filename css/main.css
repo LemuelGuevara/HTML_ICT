@@ -216,9 +216,7 @@ nav ul li a {
     border-radius: 24px;
     box-shadow: 15px 19px 27px 4px rgba(0, 0, 0, 0.25), 
     inset -4px -4px 6px rgba(0, 0, 0, 0.25);
-    background-color: #fffcf9;
-    background-color: #e2c9be;
-    background-image: linear-gradient(315deg, #e2c9be 0%, #fbf7e9 74%);    
+    background: linear-gradient(315deg, #e2c9be 0%, #fbf7e9 74%);    
 }
 .container .card:hover::before {
     opacity: 1;
@@ -238,6 +236,8 @@ nav ul li a {
 .container .card:hover .info {
     opacity: 1;
 }
+
+/* End of Hover Animation */
 
 .container .card .info p {
     letter-spacing: 1px;
@@ -262,8 +262,6 @@ nav ul li a {
     height: 550px;
     margin-top: 50px auto;
     margin-bottom: 200px auto;
-    cursor: pointer;
-    text-decoration: none;
 }
 
 .topic-choice-nav .button {
@@ -276,7 +274,9 @@ nav ul li a {
     box-shadow: 15px 19px 27px 4px rgba(0, 0, 0, 0.25), 
     inset -4px -4px 6px rgba(0, 0, 0, 0.25);
     background: white;
-    animation: transitionIn 0.75s;
+    cursor: pointer;
+    transition: 0.5s ease-in;
+    /* animation: transitionIn 0.75s; */
 }
 
 .topic-choice-nav .button p {
@@ -291,10 +291,23 @@ nav ul li a {
     text-decoration: none;
 }
 
+#active {
+    background: linear-gradient(315deg, #e2c9be 0%, #fbf7e9 74%);
+}
+
 #computer-crime-security {
     margin: 10px;
     text-decoration: none;
 }
+
+/* Button Hover Animation */
+
+.topic-choice-nav .button:hover {
+    background: linear-gradient(315deg, #e2c9be 0%, #fbf7e9 74%);
+    opacity: 90%;
+}
+
+/* End of Button Hover Animation */
 
 .topic-frame{
     position: absolute;
