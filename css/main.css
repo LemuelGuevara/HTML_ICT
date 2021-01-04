@@ -81,7 +81,6 @@ nav ul li a {
     opacity: 1;
 }
 
-
 .load-container {
     position: absolute;
     top: 75px;
@@ -150,7 +149,6 @@ nav ul li a {
     margin-top: 23px;
 }
 
-
 .container .card .info {
     position: relative;
     z-index: 2;
@@ -172,15 +170,6 @@ nav ul li a {
     font-size: 10px;
     text-align: center;
 }
-
-
-/* .container .card .icon {
-    position: relative;
-    margin-top: 70px;
-    margin-left: 30px;
-    height: 90px;
-    align-items: center;
-} */
 
 /* Hover animation */
 
@@ -242,7 +231,6 @@ nav ul li a {
     cursor: pointer;
     transition: 0.5s ease;
     /* animation: transitionInDown 1s; */
-
 }
 
 .topic-choice-nav .button p {
@@ -328,14 +316,75 @@ nav ul li a {
 
 /*Subtopics */
 
-#what-is-a-computer-crime{
+.subtopic-container {
     position: absolute;
-    left: 490px;
     top: 150px;
-    width: 950px;
+    left: 520px;
+    width: 900px;
+    height: 560px;
+    border-radius: 15px;
+    overflow: hidden;
+    overflow-y: scroll;
+}
+
+.subtopic-container h1 {
+    position: absolute;
+    text-align: center;
+    top: 20px;
+    left: 220px;
+    width: 490px;
+    font-size: 30px;
+    background-color: #F3F3F3;
+    opacity: 60%;
+    border: 2px solid rgb(209, 209, 209);
+}
+
+/* Bulleted Information */
+
+.subtopic-bullted-container {
+    width: 500px;
+    height: 300px;
+    background-color: #F3F3F3;
+    opacity: 60%;
+    border: 2px solid rgb(209, 209, 209);
+}
+
+.subtopic-bulleted-info {
+    width: 550px;
+    height: 300px;
+    position: absolute;
+    text-align: left;
+    top: 180px;
+    left: 220px;
+    column-count: 2;
+    column-gap: 20px;
+    column-width: 165px;
+    font-size: 24px;
+    list-style-position: inside;
+}
+
+/* Paragraph Form Information */
+
+.subtopic-paragraph {
+    position: absolute;
+    width: 500px;
+    top: 200px;
+    left: 220px;
+    text-align: center;
+    font-size: 18px;
+    font-weight: 600;
+    /* background-color: #F3F3F3;
+    opacity: 60%; */
+    /* border: 2px solid rgb(209, 209, 209); */
+}
+
+/* Backgrounds for The Topics */
+
+.bg-image-subtopic {
+    position: relative;
+    width: 900px;
     height: 550px;
     border-radius: 15px;
-    border: 1px solid rgb(235, 235, 235);
 }
 
 .bg-image-topics {
