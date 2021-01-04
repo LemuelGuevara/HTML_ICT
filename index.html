@@ -4,89 +4,88 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/main.css">
-    <link rel="stylesheet" href="css/transitions.css">
+    <link rel="stylesheet" href="../css/transitions.css">
     <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap"  rel="stylesheet">
     <title>ICT Online Tutorial Home</title>
 </head>
-<body>
+<body data-barba="wrapper">
 
     <!-- Landing page -->
-    <section id="main">
 
-        <!-- Nav Bar -->
+    <div class="load-container">
+        <div class="loading-screen"></div>
+    </div>
 
-        <nav>
-            <div class="logo">
-                <h1>ICT</h1>
-            </div>
-            <ul>
-                <li><a href="index.html">HOME</a></li>
-                <li><a href="./PAGES/about.html">ABOUT</a></li>
-                <li><a href="./PAGES/topics.html">TOPICS</a></li>
-                <li><a href="./PAGES/resources.html">RESOURCES</a></li>
-            </ul>
-        </nav>
+    <main data-barba="container" data-barba-namespace="home-section">
+        <section>
 
-        <!-- End of nav bar -->
+            <!-- Nav Bar -->
 
-        <!-- Topic showcase -->
+            <nav>
+                <div class="logo">
+                    <h1>ICT</h1>
+                </div>
+                <ul>
+                    <li><a href="index.html">HOME</a></li>
+                    <li><a href="./PAGES/about.html">ABOUT</a></li>
+                    <li><a href="./PAGES/topics.html">TOPICS</a></li>
+                    <li><a href="./PAGES/resources.html">RESOURCES</a></li>
+                </ul>
+            </nav>
 
-        <div class="container">
-            <div class="card">
-                <div class="computer">
+            <!-- End of nav bar -->
+
+            <!-- Topic showcase -->
+
+            <div class="container">
+                <div class="card">
                     <p>COMPUTER</p>
                     <img src="img/monitor.png" class="icon">
                     <div class="info">
                         <p>Et has minim elitr intellegat. Mea aeterno eleifend antiopam ad, nam no suscipit quaerendum.</p>
                     </div>
                 </div>
-            </div>
-            <div class="card">
-                <div class="ict-technology">
+                <div class="card">
                     <p>ICT TECHNOLOGY</p>
                     <img src="img/window_code_block.png" class="icon">
                     <div class="info">
                         <p>Et has minim elitr intellegat. Mea aeterno eleifend antiopam ad, nam no suscipit quaerendum.</p>
                     </div>
                 </div>
-            </div>
-            <div class="card">
-                <div class="computer-crime-and-security">
+                <div class="card">
                     <p>COMPUTER CRIME AND SECURITY</p>
                     <img src="img/notification_plus.png" class="icon">
                     <div class="info">
                         <p>Et has minim elitr intellegat. Mea aeterno eleifend antiopam ad, nam no suscipit quaerendum.</p>
                     </div>
                 </div>
-            </div>
-            <div class="card">
-                <div class="computer-ethics">
+                <div class="card">
                     <p>COMPUTER ETHICS</p>
                     <img src="img/group.png" class="icon">
                     <div class="info">
                         <p>Et has minim elitr intellegat. Mea aeterno eleifend antiopam ad, nam no suscipit quaerendum.</p>
                     </div>
                 </div>
-            </div>
-            <div class="card">
-                <div class="word-processor">
+                <div class="card">
                     <p>WORD PROCESSOR</p>
                     <img src="img/file_new.png" class="icon">
                     <div class="info">
                         <p>Et has minim elitr intellegat. Mea aeterno eleifend antiopam ad, nam no suscipit quaerendum.</p>
                     </div>
                 </div>
-            </div>
-            <div class="card">
-                <div class="presentation-software">
+                <div class="card">
                     <p>PRESENTATION SOFTWARE</p>
                     <img src="img/map.png" class="icon">
                     <div class="info">
                         <p>Et has minim elitr intellegat. Mea aeterno eleifend antiopam ad, nam no suscipit quaerendum.</p>
                     </div>
                 </div>
-            </div>
-        </div>
-    </section>
+            <div>
+        </section>
+    </main>
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+    <script src="https://unpkg.com/@barba/core"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.2.4/gsap.min.js"></script>
+    <script src="app.js"></script>
 </body>
 </html>
