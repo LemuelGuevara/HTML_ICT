@@ -6,7 +6,6 @@
     color: rgba(0, 0, 0, 0.7);
 }
 
-
 html {
     scroll-behavior: smooth;
 }
@@ -139,7 +138,7 @@ nav ul li a {
     margin-top: 20px;
     align-items: center;
 }
-/* Topic icons */
+/* Topic Icons */
 
 .container .card .icon {
     position: relative;
@@ -149,59 +148,10 @@ nav ul li a {
     margin-top: 23px;
 }
 
-.container .card .info {
-    position: relative;
-    z-index: 2;
-    color: rgb(0, 0, 0);
-    opacity: 0;
-    transform: translateY(30px);
-    transition: 0.7s all;
-    align-items: center;
-    justify-content: center;
-}
-
-.container .card .info p {
-    position: relative;
-    text-align: center;
-    margin-left: 5px;
-    margin-top: -200px;
-    padding: 30px;
-    letter-spacing: 1px;
-    font-size: 10px;
-    text-align: center;
-}
-
-/* Hover animation */
 
 .container .card:hover {
     transform: scale(1.2);
 }
-
-.container .card::before {
-    content: "";
-    position: absolute;
-    display: block;
-    transition: 0.5s all;
-    z-index: 2;
-    opacity: 0;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    border-radius: 24px;
-    box-shadow: 15px 19px 27px 4px rgba(0, 0, 0, 0.25), 
-    inset -4px -4px 6px rgba(0, 0, 0, 0.25);
-    background: linear-gradient(315deg, #e2c9be 0%, #fbf7e9 74%);    
-}
-.container .card:hover::before {
-    opacity: 1;
-}
-
-.container .card:hover .info {
-    opacity: 1;
-}
-
-/* End of Hover Animation */
 
 /* End of Landing Page */
 
@@ -215,7 +165,6 @@ nav ul li a {
     height: 505px;
     margin-top: -30px;
     margin-bottom: 300px auto;
-    /* background: beige; */
 }
 
 .topic-choice-nav .button {
@@ -263,11 +212,9 @@ nav ul li a {
     background: linear-gradient(315deg, #e2c9be 0%, #fbf7e9 74%);
 }
 
-/* End of Button Hover Animation */
-
 /* Topic Containers */
 
-.topic-frame{
+.topic-frame {
     position: absolute;
     width: 1050px;
     height: 605px;
@@ -278,7 +225,6 @@ nav ul li a {
     scroll-behavior: smooth;
     overflow: hidden;
     overflow-y: scroll;
-    /* background: beige; */
 }
 
 ::-webkit-scrollbar {
@@ -316,36 +262,79 @@ nav ul li a {
 
 /*Subtopics */
 
-.subtopic-container {
+.subtopic-frame {
     position: absolute;
     top: 150px;
     left: 520px;
-    width: 900px;
+    width: 915px;
     height: 560px;
     border-radius: 15px;
     overflow: hidden;
     overflow-y: scroll;
 }
 
-.subtopic-container h1 {
+.subtopic-container {
+    position: absolute;
+    width: 600px;
+    left: -15px;
+}
+
+/* Subtopic Background */
+
+.subtopic-frame img {
+    position: fixed;
+    width: 900px;
+    height: 560px;
+    border-radius: 15px;
+}
+
+/* Subtopic Scrollbar */
+
+.subtopic-frame ::-webkit-scrollbar {
+    width: 15px;
+}
+
+.subtopic-frame ::-webkit-scrollbar {
+    width: 15px;
+}
+
+.subtopic-frame .subtopic-frame ::-webkit-scrollbar-track {
+    border: 5px solid rgb(235, 235, 235);
+    border-radius: 10px;
+}
+
+.subtopic-frame ::-webkit-scrollbar-thumb {
+    background: linear-gradient(315deg, #e2c9be 0%, #fbf7e9 74%);
+    border-radius: 10px;
+}
+
+/* Subtopic Heading1 */
+
+.subtopic-frame h1 {
     position: absolute;
     text-align: center;
     top: 20px;
     left: 220px;
     width: 490px;
     font-size: 30px;
-    background-color: #F3F3F3;
-    opacity: 60%;
-    border: 2px solid rgb(209, 209, 209);
 }
 
 /* Bulleted Information */
 
-.subtopic-bullted-container {
+.subtopic-header-bulleted {
+    position: absolute;
+    text-align: center;
+    top: 300px;
+    left: 250px;
+    font-size: 20px;
+    list-style-position: inside;
+}
+
+.subtopic-bulleted-container {
     width: 500px;
     height: 300px;
     background-color: #F3F3F3;
-    opacity: 60%;
+    opacity: 95%;
     border: 2px solid rgb(209, 209, 209);
 }
 
@@ -363,6 +352,142 @@ nav ul li a {
     list-style-position: inside;
 }
 
+/* Custom Propeties for the Elements Inside the Subtopic-Frame */
+
+#computers-list-heading {
+    position: absolute;
+    top: 230px;
+    left: 20px;
+    font-size: 25px;
+    text-align: center;
+    width: 900px;
+}
+
+#computers-list {
+    width: 1000px;
+    height: 400px;
+    top: 110px;
+    left: 260px;
+    column-count: 1;
+    list-style-position: inside;
+    text-align: justify;
+}
+
+#dynamic-websites-list-heading {
+    position: absolute;
+    top: 230px;
+    left: 20px;
+    font-size: 25px;
+    text-align: center;
+    width: 900px;
+}
+
+#dynamic-websites-list {
+    position: absolute;
+    top: 300px;
+    left: 340px;
+    column-count: 1;
+    list-style-position: inside;
+    text-align: justify;
+}
+
+
+#semantic-websites-list-heading {
+    position: absolute;
+    top: 290px;
+    left: 20px;
+    font-size: 25px;
+    text-align: center;
+    width: 900px;
+}
+
+#semantic-websites-list {
+    position: absolute;
+    top: 360px;
+    left: 380px;
+    column-count: 1;
+    list-style-position: inside;
+    text-align: justify;
+}
+
+#static-websites {
+    position: absolute;
+    width: 500px;
+    top: 70px;
+    left: 10px;
+    text-align: center;
+    font-size: 25px;
+    font-weight: 600;
+}
+
+#ICT-trends-list {
+    position: absolute;
+    top: 200px;
+    left: 270px;
+    column-count: 1;
+    list-style-position: inside;
+    text-align: justify;
+    font-size: 40px;
+}
+
+#domain-types-list {
+    position: absolute;
+    width: 1000px;
+    height: 400px;
+    top: 110px;
+    left: 260px;
+    column-count: 1;
+    list-style-position: inside;
+    text-align: justify;
+}
+
+#word-processor {
+    position: absolute;
+    top: 330px;
+    left: 230px;
+}
+
+#ms-office {
+    position: absolute;
+    top: 210px;
+    left: 220px;
+    font-size: 25px;
+}
+
+#presentation {
+    width: 550px;
+    position: absolute;
+    top: 210px;
+    left: 200px;
+    font-size: 25px;
+}
+
+#powerpoint {
+    width: 550px;
+    position: absolute;
+    top: 210px;
+    left: 200px;
+    font-size: 25px;
+}
+
+/* Heading Background Colors */
+
+#computers {
+    background: rgba(255, 255, 255, 0.329);
+}
+
+#ict-technology {
+    background: #f6c98046;
+}
+
+#presentation-software {
+    background: #df8f7f4b;
+}
+
+#word-processors {
+    background: #85c0e452;
+}
+
 /* Paragraph Form Information */
 
 .subtopic-paragraph {
@@ -373,18 +498,24 @@ nav ul li a {
     text-align: center;
     font-size: 18px;
     font-weight: 600;
-    /* background-color: #F3F3F3;
-    opacity: 60%; */
-    /* border: 2px solid rgb(209, 209, 209); */
+    background: #f3f3f349;
 }
 
-/* Backgrounds for The Topics */
+.paragraph-heading {
+    position: absolute;
+    top: 250px;
+    left: 260px;
+    font-size: 25px;
+    text-align: center;
+    width: 400px;
+    border: 2px solid #85BFE4;
+}
 
-.bg-image-subtopic {
-    position: relative;
-    width: 900px;
-    height: 550px;
-    border-radius: 15px;
+#subtopic-header-info {
+    position: absolute;
+    width: 500px;
+    top: -80px;
+    background: #f3f3f349;
 }
 
 .bg-image-topics {
@@ -420,7 +551,6 @@ nav ul li a {
     transition: 0.5s ease;
     cursor: pointer;
     box-shadow: 15px 19px 27px 4px rgba(0, 0, 0, 0.25);
-    /* inset -4px -4px 6px rgba(0, 0, 0, 0.25); */
 }
 
 .resources-frame .resources-container p {
