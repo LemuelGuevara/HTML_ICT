@@ -70,15 +70,39 @@ nav ul li a {
     width: 100%;
 }
 
+.loading-screen {
+    position: relative;
+    padding-left: 0;
+    padding-right: 0;
+    padding-top: 0;
+    background-color: #4bedc2;
+    width: 0%;
+    height: 100%;
+    opacity: 1;
+}
+
+
+.load-container {
+    position: fixed;
+    top: 75px;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    overflow: hidden;
+    z-index: 10;
+    pointer-events: none;
+}
+
 /* Landing Page */
 
 /* Topic showcase frame */
 
 .container {
     position: relative;
-    width: 1578px;
-    height: 300px;
-    margin-top: 50px auto;
+    width: 1305px;
+    height: 270px;
+    margin-top: 40px;
+    margin-left: 25px;
     margin-bottom: 240px auto;
 }
 
@@ -86,115 +110,77 @@ nav ul li a {
 
 .container .card {
     position: relative;
-    width: calc(192px - 10px);
-    height: calc(260px - 25px);
+    width: calc(192px - 5px);
+    height: calc(260px - 20px);
     background: #F3F3F3;
     float: left;
-    margin: 20px;
+    margin: 15px;
     border-radius: 24px;
     box-shadow: 15px 19px 27px 4px rgba(0, 0, 0, 0.25), 
     inset -4px -4px 6px rgba(0, 0, 0, 0.25);
     transition: 0.5s ease;
     cursor: pointer;
     animation: transitionIn 0.75s;
+    justify-content: center;
+    align-items: center;
 }
 
-/* Information inside the topic boxes */
+/* Topic Cards Header */
 
-.container .card .computer {
-    position: absolute;
-    width: 112px;
-    height: 22px;
-    margin: 35px;
+.container .card p {
+    position: relative;
     text-align: center;
-    font-weight: 600;
-    font-size: 12px;
-    font-family: 'Poppins', sans-serif;
-    font-style: normal;
-    letter-spacing: 5px;
-    line-height: 22px;
-}
-
-.container .card .ict-technology {
-    position: absolute;
-    width: 160px;
     height: 60px;
-    margin: 10px;
-    text-align: center;
-    font-weight: 600;
-    font-size: 12px;
-    font-family: 'Poppins', sans-serif;
-    font-style: normal;
+    margin-left: 3px;
+    font-size: 14px;
     letter-spacing: 5px;
-    line-height: 22px;
-}
-
-.container .card .computer-crime-and-security {
-    position: absolute;
-    width: 155px;
-    height: 60px;
-    margin: 15px;
-    text-align: center;
-    font-weight: 600;
-    font-size: 12px;
     font-family: 'Poppins', sans-serif;
-    font-style: normal;
-    letter-spacing: 5px;
+    font-weight: 550;
     line-height: 22px;
+    margin-top: 20px;
+    align-items: center;
 }
-
-.container .card .computer-ethics{
-    position: absolute;
-    width: 155px;
-    height: 60px;
-    margin: 15px;
-    text-align: center;
-    font-weight: 600;
-    font-size: 12px;
-    font-family: 'Poppins', sans-serif;
-    font-style: normal;
-    letter-spacing: 5px;
-    line-height: 22px;
-}
-
-.container .card .word-processor{
-    position: absolute;
-    width: 155px;
-    height: 60px;
-    margin: 15px;
-    text-align: center;
-    font-weight: 600;
-    font-size: 12px;
-    font-family: 'Poppins', sans-serif;
-    font-style: normal;
-    letter-spacing: 5px;
-    line-height: 22px;
-}
-
-.container .card .presentation-software{
-    position: absolute;
-    width: 155px;
-    height: 60px;
-    margin: 15px;
-    text-align: center;
-    font-weight: 600;
-    font-size: 12px;
-    font-family: 'Poppins', sans-serif;
-    font-style: normal;
-    letter-spacing: 5px;
-    line-height: 22px;
-}
-
 /* Topic icons */
 
 .container .card .icon {
     position: relative;
-    margin-top: 30px;
-    left: 0;
-    right: 0;
+    height: 90px;
+    width: 90px;
+    margin-left: 48px;
+    margin-top: 23px;
+}
+
+
+.container .card .info {
+    position: relative;
+    z-index: 2;
+    color: rgb(0, 0, 0);
+    opacity: 0;
+    transform: translateY(30px);
+    transition: 0.7s all;
+    align-items: center;
+    justify-content: center;
+}
+
+.container .card .info p {
+    position: relative;
+    text-align: center;
+    margin-left: 5px;
+    margin-top: -200px;
+    padding: 30px;
+    letter-spacing: 1px;
+    font-size: 10px;
+    text-align: center;
+}
+
+
+/* .container .card .icon {
+    position: relative;
+    margin-top: 70px;
+    margin-left: 30px;
     height: 90px;
     align-items: center;
-}
+} */
 
 /* Hover animation */
 
@@ -222,32 +208,11 @@ nav ul li a {
     opacity: 1;
 }
 
-.container .card .info {
-    position: relative;
-    z-index: 2;
-    color: rgb(0, 0, 0);
-    opacity: 0;
-    transform: translateY(30px);
-    transition: 0.7s all;
-    align-items: center;
-    justify-content: center;
-}
-
 .container .card:hover .info {
     opacity: 1;
 }
 
 /* End of Hover Animation */
-
-.container .card .info p {
-    letter-spacing: 1px;
-    font-size: 10px;
-    margin-top: -160px;
-    margin-bottom: 30px;
-    left: 15px;
-    right: 15px;
-    text-align: center;
-}
 
 /* End of Landing Page */
 
@@ -258,10 +223,11 @@ nav ul li a {
 
 .topic-choice-nav {
     position: relative;
-    width: 355px;
-    height: 550px;
+    width: 310px;
+    height: 625px;
     margin-top: 50px auto;
     margin-bottom: 200px auto;
+    background: beige;
 }
 
 .topic-choice-nav .button {
@@ -275,15 +241,19 @@ nav ul li a {
     inset -4px -4px 6px rgba(0, 0, 0, 0.25);
     background: white;
     cursor: pointer;
-    transition: 0.5s ease-in;
-    /* animation: transitionIn 0.75s; */
+    /* transition: 0.5s ease; */
+    /* animation: transitionInDown 1s; */
+
 }
 
 .topic-choice-nav .button p {
+    position: relative;
+    height: 50px;
+    width: 300px;
     text-align: center;
-    margin: 18px;
-    font-size: 20px;
-    font-weight: bold;
+    margin-top: 20px;
+    font-size: 16px;
+    font-weight: 600;
     font-style: normal;
 }
 
@@ -304,7 +274,7 @@ nav ul li a {
 
 .topic-choice-nav .button:hover {
     background: linear-gradient(315deg, #e2c9be 0%, #fbf7e9 74%);
-    opacity: 90%;
+    transition: 0.3s;
 }
 
 /* End of Button Hover Animation */
@@ -322,7 +292,7 @@ nav ul li a {
     scroll-behavior: smooth;
     overflow: hidden;
     overflow-y: scroll;
-    
+    /* background: beige; */
 }
 
 ::-webkit-scrollbar {
@@ -348,7 +318,8 @@ nav ul li a {
     margin: 10px;
     border-radius: 17px;
     transition: 0.5s ease;
-    cursor: pointer;  
+    cursor: pointer;
+    animation: transitionIn 1.3s;
 }
 
 .topic-frame .topic-container p {
@@ -363,8 +334,8 @@ nav ul li a {
 }
 
 .topic-container:hover {
-    transform: scale(1.05);
-    box-shadow: 0px 2px 10px 2px rgba(0, 0, 0, 0.25);;
+    transform: scale(1.02);
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.25);
 }
 
 /* End of Topics Page */
@@ -401,19 +372,65 @@ nav ul li a {
     text-align: left;
     left: 20px;
     top: 150px;
-    font-size: 24px;
-    line-height: 27px;
+    font-size: 20px;
+    line-height: 25px;
     font-family: 'Poppins', sans-serif;
     font-weight: 660;
 }
 
-#bg-image {
+/* Backgrounds for the resources container */
+
+#bg-websites {
     position: relative;
     width: 310px;
     height: 145px;
     border-top-right-radius: 17px;
     border-top-left-radius: 17px;
-    border-bottom: 1px solid rgb(207, 207, 207) ;
+    border-bottom: 1px solid rgb(207, 207, 207);
 }
 
+#bg-tutorials {
+    position: relative;
+    width: 310px;
+    height: 145px;
+    border-top-right-radius: 17px;
+    border-top-left-radius: 17px;
+    border-bottom: 1px solid rgb(207, 207, 207);
+}
+
+#bg-links {
+    position: relative;
+    width: 310px;
+    height: 145px;
+    border-top-right-radius: 17px;
+    border-top-left-radius: 17px;
+    border-bottom: 1px solid rgb(207, 207, 207);
+}
+
+#bg-articles {
+    position: relative;
+    width: 310px;
+    height: 145px;
+    border-top-right-radius: 17px;
+    border-top-left-radius: 17px;
+    border-bottom: 1px solid rgb(207, 207, 207);
+}
+
+#bg-blogs {
+    position: relative;
+    width: 310px;
+    height: 145px;
+    border-top-right-radius: 17px;
+    border-top-left-radius: 17px;
+    border-bottom: 1px solid rgb(207, 207, 207);
+}
+
+#bg-applications {
+     position: relative;
+    width: 310px;
+    height: 145px;
+    border-top-right-radius: 17px;
+    border-top-left-radius: 17px;
+    border-bottom: 1px solid rgb(207, 207, 207);
+}
 /* End of Resources Page */
