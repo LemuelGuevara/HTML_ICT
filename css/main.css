@@ -75,7 +75,7 @@ nav ul li a {
     padding-left: 0;
     padding-right: 0;
     padding-top: 0;
-    background-color: #4bedc2;
+    background: linear-gradient(315deg, #dfb89a 0%, #be998f 74%);
     width: 0%;
     height: 100%;
     opacity: 1;
@@ -83,7 +83,7 @@ nav ul li a {
 
 
 .load-container {
-    position: fixed;
+    position: absolute;
     top: 75px;
     left: 0;
     width: 100%;
@@ -218,16 +218,15 @@ nav ul li a {
 
 /* About Page */
 
-
 /* Topics Page */
 
 .topic-choice-nav {
     position: relative;
     width: 310px;
-    height: 625px;
-    margin-top: 50px auto;
-    margin-bottom: 200px auto;
-    background: beige;
+    height: 505px;
+    margin-top: -30px;
+    margin-bottom: 300px auto;
+    /* background: beige; */
 }
 
 .topic-choice-nav .button {
@@ -241,7 +240,7 @@ nav ul li a {
     inset -4px -4px 6px rgba(0, 0, 0, 0.25);
     background: white;
     cursor: pointer;
-    /* transition: 0.5s ease; */
+    transition: 0.5s ease;
     /* animation: transitionInDown 1s; */
 
 }
@@ -274,7 +273,6 @@ nav ul li a {
 
 .topic-choice-nav .button:hover {
     background: linear-gradient(315deg, #e2c9be 0%, #fbf7e9 74%);
-    transition: 0.3s;
 }
 
 /* End of Button Hover Animation */
@@ -314,6 +312,7 @@ nav ul li a {
     width: calc(355px - 45px);
     height: calc(955px - 775px);
     background: rgb(241, 241, 241);
+    background-image: url();
     float: left; 
     margin: 10px;
     border-radius: 17px;
@@ -322,20 +321,28 @@ nav ul li a {
     animation: transitionIn 1.3s;
 }
 
-.topic-frame .topic-container p {
-    position: absolute;
-    text-align: left;
-    left: 20px;
-    top: 140px;
-    font-size: 15px;
-    line-height: 27px;
-    font-family: 'Poppins', sans-serif;
-    font-weight: 660;
-}
-
 .topic-container:hover {
     transform: scale(1.02);
     box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.25);
+}
+
+/*Subtopics */
+
+#what-is-a-computer-crime{
+    position: absolute;
+    left: 490px;
+    top: 150px;
+    width: 950px;
+    height: 550px;
+    border-radius: 15px;
+    border: 1px solid rgb(235, 235, 235);
+}
+
+.bg-image-topics {
+    position: relative;
+    width: 310px;
+    height: 180px;
+    border-radius: 17px;
 }
 
 /* End of Topics Page */
@@ -380,7 +387,7 @@ nav ul li a {
 
 /* Backgrounds for the resources container */
 
-#bg-websites {
+.bg-image-resources {
     position: relative;
     width: 310px;
     height: 145px;
@@ -389,48 +396,4 @@ nav ul li a {
     border-bottom: 1px solid rgb(207, 207, 207);
 }
 
-#bg-tutorials {
-    position: relative;
-    width: 310px;
-    height: 145px;
-    border-top-right-radius: 17px;
-    border-top-left-radius: 17px;
-    border-bottom: 1px solid rgb(207, 207, 207);
-}
-
-#bg-links {
-    position: relative;
-    width: 310px;
-    height: 145px;
-    border-top-right-radius: 17px;
-    border-top-left-radius: 17px;
-    border-bottom: 1px solid rgb(207, 207, 207);
-}
-
-#bg-articles {
-    position: relative;
-    width: 310px;
-    height: 145px;
-    border-top-right-radius: 17px;
-    border-top-left-radius: 17px;
-    border-bottom: 1px solid rgb(207, 207, 207);
-}
-
-#bg-blogs {
-    position: relative;
-    width: 310px;
-    height: 145px;
-    border-top-right-radius: 17px;
-    border-top-left-radius: 17px;
-    border-bottom: 1px solid rgb(207, 207, 207);
-}
-
-#bg-applications {
-     position: relative;
-    width: 310px;
-    height: 145px;
-    border-top-right-radius: 17px;
-    border-top-left-radius: 17px;
-    border-bottom: 1px solid rgb(207, 207, 207);
-}
 /* End of Resources Page */
