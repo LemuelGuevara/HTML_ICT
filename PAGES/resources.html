@@ -8,52 +8,66 @@
     <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
     <title>Resources</title>
 </head>
-<body>
+<body data-barba="wrapper">
     <!-- Landing page -->
-    <section> 
-        
-        <!-- Nav Bar -->
 
-        <nav>
-            <div class="logo">
-                <h1>ICT</h1>
-            </div>
-            <ul>
-                <li><a href="../index.html">HOME</a></li>
-                <li><a href="../PAGES/about.html">ABOUT</a></li>
-                <li><a href="../PAGES/topics.html">TOPICS</a></li>
-                <li><a href="../PAGES/resources.html">RESOURCES</a></li>
-            </ul>
-        </nav>
+    <div class="load-container">
+        <div class="loading-screen"></div>
+    </div>
 
-        <!-- End of nav bar -->
+    <main data-barba="container" data-barba-namespace="home-section">
+        <section> 
+            
+            <!-- Nav Bar -->
 
-        <!-- Resources Page -->
+            <nav>
+                <div class="logo">
+                    <h1>ICT</h1>
+                </div>
+                <ul>
+                    <li><a href="../index.html">HOME</a></li>
+                    <li><a href="../PAGES/about.html">ABOUT</a></li>
+                    <li><a href="../PAGES/topics.html">TOPICS</a></li>
+                    <li><a href="../PAGES/resources.html">RESOURCES</a></li>
+                </ul>
+            </nav>
 
-        <div class="resources-frame">
-            <div class="resources-container">
-                <img src="/img/Websites.png" id="bg-image">
-                <p>Websites</p>
-            </div>
-            <div class="resources-container">
-                <p>Tutorials</p>
-            </div>
-            <div class="resources-container">
-                <p>Links</p>
-            </div>
-            <div class="resources-container">
-                <p>Articles</p>
-            </div>
-            <div class="resources-container">
-                <p>Blogs</p>
-            </div>
-            <div class="resources-container">
-                <p>Applications</p>
-            </div>
-        </div>
+            <!-- End of nav bar -->
 
-        <!-- End of Resources Page -->
+            <!-- Resources Page -->
 
-    </section>
+            <div class="resources-frame">
+                <div class="resources-container">
+                    <img src="../img/Websites.png" id="bg-websites">
+                    <p>Websites</p>
+                </div>
+                <div class="resources-container">
+                    <img src="../img/tutorials.png" id="bg-tutorials">
+                    <p>Tutorials</p>
+                </div>
+                <div class="resources-container">
+                    <img src="../img/links.png" id="bg-links">
+                    <p>Links</p>
+                </div>
+                <div class="resources-container">
+                    <img src="../img/articles.png" id="bg-articles">
+                    <p>Articles</p>
+                </div>
+                <div class="resources-container">
+                    <img src="../img/blogs.png" id="bg-blogs">
+                    <p>Blogs</p>
+                </div>
+                <div class="resources-container">
+                    <img src="../img/applications.png" id="bg-applications">
+                    <p>Applications</p>
+                </div>
+            </div>
+
+            <!-- End of Resources Page -->
+
+        </section>
+    </main>
+    <script src="../app.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/vue/2.0.3/vue.min.js"></script>
 </body>
 </html>
