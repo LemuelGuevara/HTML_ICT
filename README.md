@@ -1,8 +1,7 @@
 #Finish the following main pages
     --Home Page ✔
     --About Page 
-    --Topics Page 95% 
-        --Make pop-out windows 
+    --Topics Page ✔
     --Resources Page 90%
 
 

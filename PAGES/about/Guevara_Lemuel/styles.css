@@ -1,0 +1,231 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+section {
+    position: relative;
+    width: 100%;
+    padding: 100px;
+    display: flex;
+    min-height: 100vh;
+    justify-content: space-between;
+    align-items: center;
+}
+
+nav {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 20px 90px;
+    float: right;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #2e2e2e;
+    opacity: 80%;
+}
+
+nav ul {
+    position: relative;
+    display: flex;
+    left: 700px;
+}
+
+nav ul li {
+    list-style: none;
+}
+
+nav ul li a {
+    display: inline;
+    color: white;
+    font-weight: 400;
+    font-size: 20px;
+    margin-left: 60px;
+    text-decoration: none;
+    letter-spacing: 5px;
+}
+
+/* Home Section */
+
+.landing-text {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 100%;
+    text-align: center;
+    letter-spacing: 5px;
+    font-size: 26px;
+}
+
+/* About Section */
+
+.about-section img{
+    position: absolute;
+    width: 570px;
+    height: 590px;
+    left: 124px;
+    top: 85px;
+    filter: drop-shadow(21px 23px 27px rgba(0, 0, 0, 0.25));
+    border-radius: 42px;
+}
+
+.about-section .info h2{
+    position: absolute;
+    text-align: left;
+    left: 800px;
+    top: 130px;
+    width: 590px;
+    font-size: 45px;
+    letter-spacing: 20px;
+}
+
+.about-section .info p {
+    position: absolute;
+    width: 550px;
+    height: 249px;
+    left: 800px;
+    top: 230px;
+    font-size: 22px;
+    font-weight: 400;
+    justify-content: center;
+    text-align: left;
+}
+
+/* Skills Section */
+
+.skills-section h2 {
+    position: absolute;
+    top: 10%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 100%;
+    text-align: center;
+    letter-spacing: 5px;
+    font-size: 64px;
+    text-transform: capitalize;
+}
+
+.skills-section .info h2 {
+    position: absolute;
+    text-align: left;
+    left: 400px;
+    top: 230px;
+    width: 590px;
+    font-size: 45px;
+    letter-spacing: 30%;
+    text-transform: uppercase;
+}
+
+.skills-section .skills-container {
+    position: absolute;
+    width: 550px;
+    height: 290px;
+}
+
+.skills-section .skills-container .skills-card {
+    position: relative;
+    width: calc(580px - 45px);
+    height: calc(150px - 95px);
+    box-shadow: 4px 12px 27px 4px rgba(0, 0, 0, 0.25);
+    background: rgb(241, 241, 241);
+    background-image: url();
+    float: left; 
+    margin: 6px;
+    border-radius: 10px;
+}
+
+.skills-section img{
+    position: absolute;
+    width: 650px;
+    height: 420px;
+    left: 804px;
+    top: 250px;
+    filter: drop-shadow(21px 23px 27px rgba(0, 0, 0, 0.25));
+    border-radius: 10px;
+}
+
+.skills-section .skills-container .skills-card p {
+    position: absolute;
+    left: 20px;
+    top: 15px;
+    text-align: left;
+    text-transform: uppercase;
+    font-weight: 600;
+    letter-spacing: 10px;
+    font-size: 14px;
+}
+
+#js{
+    position: absolute;
+    width: 450px;
+    left: 110px;
+    height: 35px;
+    top: 408px;
+    background: black;
+
+    border-radius: 10px;
+}
+#blender{
+    position: absolute;
+    width: 420px;
+    left: 110px;
+    height: 35px;
+    top: 475px;
+    background: black;
+
+    border-radius: 10px;
+}
+
+#python {
+    position: absolute;
+    width: 495px;
+    left: 110px;
+    height: 35px;
+    top: 542px;
+    background: black;
+
+    border-radius: 10px;
+}
+
+#photoshop {
+    position: absolute;
+    width: 390px;
+    left: 110px;
+    height: 35px;
+    top: 609px;
+    background: black;
+
+    border-radius: 10px;
+}
+
+/* Works Section */
+
+.works-section h2 {
+    position: absolute;
+    top: 10%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 100%;
+    text-align: center;
+    letter-spacing: 5px;
+    font-size: 64px;
+    text-transform: capitalize;
+}
+
+.works-section .img-showcase {
+    position: absolute;
+    width: 1450px;
+    height: 555px;
+    padding: 20px;
+    left: 65px;
+    top: 150px;
+}
