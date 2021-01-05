@@ -848,6 +848,10 @@ nav ul li a {
     box-shadow: 15px 19px 27px 4px rgba(0, 0, 0, 0.25);
 }
 
+.resources-frame .resources-container:hover {
+    transform: scale(1.02);
+}
+
 .resources-frame .resources-container p {
     position: absolute;
     text-align: left;
