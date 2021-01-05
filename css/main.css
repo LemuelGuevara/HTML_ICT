@@ -525,6 +525,240 @@ nav ul li a {
     border-radius: 17px;
 }
 
+/* Ordered information */
+
+.subtopic-ordered-container {
+    width: 500px;
+    height: 300px;
+}
+
+.subtopic-ordered-info {
+    width: 550px;
+    height: 300px;
+    position: absolute;
+    text-align: left;
+    top: 160px;
+    left: 220px;
+    column-count: 2;
+    column-gap: 20px;
+    column-width: 130px;
+    font-size: 20px;
+    list-style-position: inside;
+    color: black;
+}
+
+/* End of ordered Information */
+
+/* Ordered information specified contents */
+
+#input {
+    position:absolute;
+    left:170px;
+    top: 7px;
+    font-weight: bold;
+}
+
+#inputInfo {
+    position:absolute;
+    top: 50px;
+    text-align: center;
+}
+
+#olContainer {
+    position: absolute;
+    left: 150px;
+    top: 4px;
+    list-style: none;
+    font-size: 28x;
+    font-weight: bold;
+    background-color: #F3F3F3;
+    opacity: 90%;
+    border: 1px solid rgb(209, 209, 209)
+}
+
+#infoContainer {
+    width: 550px;
+    height: 350px;
+    position: absolute;
+    text-align: left;
+    top: 40px;
+    left: -30px;
+    column-count: 2;
+    column-gap: 20px;
+    column-width: 165px;
+    font-size: 20px;
+    list-style-position: inside;
+    list-style-type: disc;
+    color: black;
+    background-color: #F3F3F3;
+    background-repeat: no-repeat;
+    opacity: 90%;
+    border: 2px solid rgb(209, 209, 209)
+}
+
+#inputList {
+    Position: absolute;
+    top:120px;
+    left: 160px;
+    list-style-type: circle;
+}
+
+#output {
+    position:absolute;
+    left:170px;
+    top: 7px;
+    font-weight: bold;
+}
+
+#outputContainer {
+    width: 550px;
+    height: 350px;
+    position: absolute;
+    text-align: left;
+    top: 550px;
+    left: 190px;
+    column-count: 2;
+    column-gap: 20px;
+    column-width: 165px;
+    font-size: 20px;
+    list-style-position: inside;
+    color: black;
+    background-color: #F3F3F3;
+    background-repeat: no-repeat;
+    opacity:90%;
+    border: 2px solid rgb(209, 209, 209)
+}
+
+#storageContainer {
+    width: 550px;
+    height: 350px;
+    position: absolute;
+    text-align: left;
+    top: 900px;
+    left: 190px;
+    column-count: 2;
+    column-gap: 20px;
+    column-width: 165px;
+    font-size: 20px;
+    list-style-position: inside;
+    color: black;
+    background-color: #F3F3F3;
+    background-repeat: no-repeat;
+    opacity: 90%;
+    border: 2px solid rgb(209, 209, 209)
+}
+
+#storage {
+    position:absolute;
+    left:170px;
+    top: 7px;
+    font-weight: bold;
+}
+
+#storageList {
+    Position: absolute;
+    top:150px;
+    left: 160px;
+}
+
+#operating_system {
+    position:absolute;
+    left:120px;
+    top: 7px;
+    font-weight: bold;
+}
+
+#categories {
+    position:absolute;
+    left:100px;
+    top: 7px;
+    font-weight: bold;
+}
+
+#categoriesList {
+    Position: absolute;
+    top:60px;
+    left: 130px;
+    list-style-type: circle;
+}
+
+#application_software {
+    position:absolute;
+    left:150px;
+    top: 7px;
+    font-weight: bold;
+}
+
+#applicationList {
+    Position: absolute;
+    top: 120px;
+    left: 120px;
+    list-style-type:circle;
+}
+
+#professionalContainer {
+    width: 550px;
+    height: 350px;
+    position: absolute;
+    text-align: left;
+    top: 150px;
+    left: 320px;
+    column-count: 2;
+    column-gap: 20px;
+    column-width: 165px;
+    font-size: 20px;
+    list-style-position: inside;
+    list-style-type: disc;
+    color: black;
+    background-color: #F3F3F3;
+    background-repeat: no-repeat;
+    opacity: 90%;
+    border: 2px solid rgb(209, 209, 209)
+}
+
+#intellectualContainer {
+    width: 550px;
+    height: 500px;
+    position: absolute;
+    text-align: left;
+    top: 150px;
+    left: 320px;
+    column-count: 2;
+    column-gap: 20px;
+    column-width: 165px;
+    font-size: 20px;
+    list-style-position: inside;
+    list-style-type: disc;
+    color: black;
+    background-color: #F3F3F3;
+    background-repeat: no-repeat;
+    background-size: 1000px, 350px;
+    opacity: 90%;
+    border: 2px solid rgb(209, 209, 209)
+}
+
+/*  End of Ordered information specified contents */
+
+/* Backgrounds for The Topics */
+
+.subtopic-frame img {
+    width: 900px;
+    height: 570px;
+    border-radius: 15px;
+    position:fixed;
+    left: 506px;
+    top: 150px;
+}
+
+.bg-image-topics {
+    position: relative;
+    width: 310px;
+    height: 180px;
+    border-radius: 17px;
+}
+
+/* End of Backgrounds for The Topics */
+
 /* End of Topics Page */
 
 /* Resources Page */
