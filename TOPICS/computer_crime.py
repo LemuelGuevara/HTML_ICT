@@ -7,11 +7,11 @@
     <link rel="stylesheet" href="../css/transitions.css">
     <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
     <link rel="icon" href="../img/titlebar_icon.png" type="x-icon">
-    <title>ICT Technology</title>
+    <title>Computer Crime and Security</title>
 </head>
 <body>
 
-    <!-- ICT Technology Page -->
+    <!-- Computer Crime and Security Page -->
 
     <section>
 
@@ -28,7 +28,7 @@
                 <li><a href="../PAGES/resources.html">RESOURCES</a></li>
             </ul>
         </nav>
-        
+
         <!-- End of nav bar -->
         
         <!-- Topic Buttons -->
@@ -40,8 +40,11 @@
             <div class="button">
                 <p><a href="../TOPICS/computer.html">Computer</a></p>
             </div>
-            <div class="button" id="active">
+            <div class="button">
                 <p><a href="../TOPICS/ict_technology.html">ICT Technology</a></p>
+            </div>
+            <div class="button" id="active">
+                <p><a href="../TOPICS/computer_crime.html">Computer Crime and Security</a></p>
             </div>
             <div class="button">
                 <p><a href="../TOPICS/computer_ethics.html">Computer Ethics</a></p>
@@ -60,28 +63,33 @@
 
         <div class="topic-frame">
             <div class="topic-container">
-                <a href="../SUBTOPICS/ict_technology/static_pages.html">
-                    <img src="../img/sub_topic_bg/static__web_pages.png" class="bg-image-topics">
+                <a href="../SUBTOPICS/computer_crime/computer_crime.html">
+                    <img src="../img/sub_topic_bg/what_is_a_computer_crime.png" class="bg-image-topics">
                 </a>
             </div>
             <div class="topic-container">
-                <a href="../SUBTOPICS/ict_technology/dynamic_pages.html">
-                    <img src="../img/sub_topic_bg/dynamic_web_pages.png" class="bg-image-topics">
+                <a href="../SUBTOPICS/computer_crime/types_computer_crime.html">
+                    <img src="../img/sub_topic_bg/types_computer_crime.png" class="bg-image-topics">
                 </a>
             </div>
             <div class="topic-container">
-                <a href="../SUBTOPICS/ict_technology/semantic_pages.html">
-                    <img src="../img/sub_topic_bg/semantic_web_pages.png" class="bg-image-topics">
+                <a href="../SUBTOPICS/computer_crime/types_infection.html">
+                    <img src="../img/sub_topic_bg/types_infection.png" class="bg-image-topics">
                 </a>
             </div>
             <div class="topic-container">
-                <a href="../SUBTOPICS/ict_technology/Trends.html">
-                    <img src="../img/sub_topic_bg/ict_trends.png" class="bg-image-topics">
+                <a href="../SUBTOPICS/computer_crime/symptoms_infections.html">
+                    <img src="../img/sub_topic_bg/Symptoms_infection.png" class="bg-image-topics">
                 </a>
             </div>
             <div class="topic-container">
-                <a href="../SUBTOPICS/ict_technology/types_domain.html">
-                    <img src="../img/sub_topic_bg/types_website_domains.png" class="bg-image-topics">
+                <a href="../SUBTOPICS/computer_crime/protection_measures.html">
+                    <img src="../img/sub_topic_bg/protection_measures.png" class="bg-image-topics">
+                </a>
+            </div>
+            <div class="topic-container">
+                <a href="../SUBTOPICS/computer_crime/computer_security.html">
+                    <img src="../img/sub_topic_bg/computer_security.png" class="bg-image-topics">
                 </a>
             </div>
         </div>
@@ -90,7 +98,7 @@
 
     </section>
 
-        <!-- End of ICT Technology -->
+        <!-- End of Computer Crime and Security Page -->
 
 </body>
 </html>
