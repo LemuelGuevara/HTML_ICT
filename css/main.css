@@ -441,6 +441,8 @@ nav ul li a {
     text-align: justify;
 }
 
+
+
 #word-processor {
     position: absolute;
     top: 330px;
@@ -473,6 +475,10 @@ nav ul li a {
 /* Heading Background Colors */
 
 #computers {
+    background: rgba(255, 255, 255, 0.329);
+}
+
+#computer-ethics {
     background: rgba(255, 255, 255, 0.329);
 }
 
@@ -701,8 +707,8 @@ nav ul li a {
     height: 350px;
     position: absolute;
     text-align: left;
-    top: 150px;
-    left: 320px;
+    top: 10px;
+    left: -40px;
     column-count: 2;
     column-gap: 20px;
     column-width: 165px;
